@@ -1,0 +1,61 @@
+body
+{
+    align-items: center;
+}
+.first
+{
+    width: 65%;
+    height: 92px;
+    align-content: center;
+    border: 2px solid black;
+    padding: 2px;
+    display: block;
+    margin: auto;
+}
+.color
+{
+    margin-top: 3%;
+    margin-left: 45%;
+    width: 65%;
+    margin-bottom: 4px;
+}
+.button
+{
+    border-radius: 50%;
+    border: 2px solid black;
+    height: 45px;
+    width: 40px;
+}
+#a
+{
+    background-color: aquamarine;
+}
+#b
+{
+    background-color: coral;
+}
+#c
+{
+    background-color: yellow;
+}
+#d
+{
+    background-color: burlywood;
+}
+#e
+{
+    background-color:lavenderblush;
+}
+#film
+{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+img{    
+    width: 250px;
+    height:200px;
+    display: inline-block;
+}
