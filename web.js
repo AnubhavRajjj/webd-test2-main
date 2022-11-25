@@ -10,7 +10,7 @@ const first = document.getElementById("film");
 const f = document.getElementById("form");
 const s = document.getElementById("search");
 
-showMovies(apiUrl);
+showMovies(API);
 function showMovies(url){e
     fetch(url).then(res => res.json())
     .then(function(data){
@@ -21,21 +21,21 @@ function showMovies(url){e
         const text = document.createElement('h2');
 
         text.innerHTML = `${element.title}`;
-        image.src = IMGPATH + element.poster_path;
+        image.src = path + element.poster_path;
         el.appendChild(image);
         el.appendChild(text);
-        main.appendChild(el);
+        first.appendChild(el);
     }); 
 });
 }
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    main.innerHTML = '';
+    first.innerHTML = '';
      
     const searchTerm = search.value;
 
     if (searchTerm) {
-        showMovies(SEARCHAPI + searchTerm);
+        showMovies(find + searchTerm);
         search.value = "";
     }
 });
